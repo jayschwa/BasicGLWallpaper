@@ -18,12 +18,14 @@
 */
 -->
 
-<!-- This file contains resource definitions for displayed strings, allowing
-     them to be changed based on the locale and options. -->
+<!--
+     This file contains resource definitions for displayed strings, allowing
+     them to be changed based on the locale and options.
+-->
 
 <resources>
+
     <!-- Simple strings. -->
     <string name="app_name">Basic GLSurfaceView</string>
 
 </resources>
-

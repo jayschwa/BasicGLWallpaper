@@ -22,27 +22,26 @@ import android.view.WindowManager;
 
 import java.io.File;
 
-
 public class BasicGLSurfaceViewActivity extends Activity {
 
-    private BasicGLSurfaceView mView;
+	private BasicGLSurfaceView mView;
 
-    @Override
-    protected void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        mView = new BasicGLSurfaceView(getApplication());
-        setContentView(mView);
-    }
+	@Override
+	protected void onCreate(Bundle icicle) {
+		super.onCreate(icicle);
+		mView = new BasicGLSurfaceView(getApplication());
+		setContentView(mView);
+	}
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mView.onPause();
-    }
+	@Override
+	protected void onPause() {
+		super.onPause();
+		mView.onPause();
+	}
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mView.onResume();
-    }
+	@Override
+	protected void onResume() {
+		super.onResume();
+		mView.onResume();
+	}
 }
