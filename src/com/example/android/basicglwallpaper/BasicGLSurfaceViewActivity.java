@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.basicglsurfaceview;
+package com.example.android.basicglwallpaper;
 
 import android.app.Activity;
 import android.os.Bundle;
