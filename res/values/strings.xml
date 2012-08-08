@@ -26,6 +26,6 @@
 <resources>
 
     <!-- Simple strings. -->
-    <string name="app_name">Basic GLSurfaceView</string>
+    <string name="app_name">Basic GL Wallpaper</string>
 
 </resources>

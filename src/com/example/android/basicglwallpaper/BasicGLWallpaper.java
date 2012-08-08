@@ -16,15 +16,20 @@
 
 package com.example.android.basicglwallpaper;
 
-import android.content.Context;
-import android.opengl.GLSurfaceView;
+import android.view.SurfaceHolder;
 
-import android.opengl.GLES20;
+public class BasicGLWallpaper extends GLWallpaperService {
+	@Override
+	public Engine onCreateEngine() {
+		return new BasicGLEngine();
+	}
 
-class BasicGLSurfaceView extends GLSurfaceView {
-	public BasicGLSurfaceView(Context context) {
-		super(context);
-		setEGLContextClientVersion(2);
-		setRenderer(new GLES20TriangleRenderer(context));
+	class BasicGLEngine extends GLWallpaperService.GLEngine {
+		@Override
+		public void onCreate(SurfaceHolder surfaceHolder) {
+			super.onCreate(surfaceHolder);
+			setEGLContextClientVersion(2);
+			setRenderer(new GLES20TriangleRenderer(BasicGLWallpaper.this));
+		}
 	}
 }
